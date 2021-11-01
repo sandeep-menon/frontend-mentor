@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 98%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-color: hsl(225, 100%, 98%);
+  }
+  .order-summary-card {
+    width: 90%;
+  }
+  .order-summary-card-image > img {
+    width: 100%;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+}
+.subtitle {
+  color: grey;
+}
+.title {
+  font-weight: 800;
+}
+.hoverable:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  cursor: pointer;
+}
+.order-summary-card {
+  text-align: center;
+  background-color: white;
+  max-width: 450px;
+  border-radius: 25px;
+}
+.order-summary-card-image > img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.order-summary-card-title {
+  font-size: 2em;
+  margin: 1em 0 1em 0;
+}
+.order-summary-card-desc-text {
+  width: 80%;
+  margin: 0 auto 1em auto;
+}
+.order-summary-card-plan {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-column-gap: 1em;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.5em 1em;
+  border-radius: 25px;
+}
+.order-summary-card-plan-summary {
+  text-align: left;
+  margin-left: 1em;
+}
+.order-summary-card-plan-change {
+  color: hsl(245, 75%, 52%);
+}
+.order-summary-card-primary-btn {
+  background: hsl(245, 75%, 52%);
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em;
+  color: white;
+  border-radius: 15px;
+  box-shadow: hsl(245, 75%, 52%) 0px 25px 20px -20px;
+}
+.order-summary-card-primary-btn:hover {
+  background: hsl(228, 45%, 44%);
+  cursor: pointer;
+  box-shadow: hsl(228, 45%, 44%) 0px 25px 20px -20px;
+}
+.order-summary-card-secondary-btn {
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em;
+}
+.order-summary-card-secondary-btn:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
